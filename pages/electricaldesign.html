@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <title>electrical-design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <img src="Images/Logo ysi ysi ysi ysi ysi.png" alt="logo ysi" width="135%" height="100%">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="Home.HTML">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="About Us.HTML"> About Us <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="About Us.HTML">About Yoshiba</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="Visi & Misi.HTML">Vision & Mission</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="Board Of Director.HTML">Board Of Director</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="Service.HTML">Services<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="programming.html">Programming</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="electricaldesign.html">Electrical Design</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="upgrading.html">Upgrading</a>
+                                    <li>
+                                        <li class="dropdown-link">
+                                        <a href="installation.html">Installation</a>
+                                    </li>
+                                        <div class="dropdown second">
+                                            <ul>
+                                            </ul>
+                                            </ul>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="News.HTML">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="overlay">
+                <style>
+                    .bg-grey {
+                    background-color: #fafafa;
+                    width: auto;
+                    height: 70px;
+                    }
+                
+                    .header-about-us {
+                    display: flex;
+                    flex-direction: column;
+                    }
+                </style>
+                <br><br><br><br>
+                <div class="bg-grey"></div>
+
+                <div class="header-about-us">
+                <img src="Images/header about us.png" alt="">
+            </div>
+            <br><br><br><br><br><br>
+            <style>
+
+                .bg-grey {
+                    background-color: #fafafa;
+                    width: auto;
+                    height: 70px;
+                }
+
+                .ayam {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .header-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @media screen and (max-width: 720px){
+                    .header-container {
+                        flex-direction: column;
+                        display: flex;
+                    }
+        
+                }
+        
+                h5 {
+                    margin: 0 60px;
+                    font-size: 30px;
+                    color: #333;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    font-family: arial, sans-serif;
+                }
+        
+                .header-line {
+                    width: 480px;
+                    height: 15px;
+                    background: repeating-linear-gradient(
+                        -60deg,
+                        #000000,
+                        #000000 15px,
+                        transparent 10px,
+                        transparent 20px
+                    );
+                }
+            </style>
+
+            <div class="ayam">
+                <div class="header-container">
+                    <div class="header-line"></div>
+                    <br>
+                    <h5>Electrical Design</h5>
+                    <br>
+                    <div class="header-line"></div>
+                </div>
+            </div>
+        
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </main>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".overlay").forEach(element => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 50 },
+                { opacity: 1, y: 0, duration: 1, ease: "power2.out",
+                  scrollTrigger: {
+                      trigger: element,
+                      start: "top 80%", 
+                      toggleActions: "play none none none"
+                  }
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>
