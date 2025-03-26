@@ -283,38 +283,44 @@
             }
     
             .header-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            @media screen and (max-width: 720px){
-                .header-container {
-                    flex-direction: column;
-                    display: flex;
-                }
-    
-            }
-    
-            h5 {
-                margin: 0 60px;
-                font-size: 30px;
-                color: #333;
-                white-space: nowrap;
-                font-weight: bold;
-                font-family: arial, sans-serif;
-            }
-    
-            .header-line {
-                width: 480px;
-                height: 15px;
-                background: repeating-linear-gradient(
-                    -60deg,
-                    #000000,
-                    #000000 15px,
-                    transparent 10px,
-                    transparent 20px
-                );
-            }
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                    
+                    @media screen and (max-width: 720px){
+                        .header-container {
+                            flex-direction: column;
+                            display: flex;
+                        }
+                        .header-line{
+                            width: 120px;
+                        }
+                    }
+                    
+                    h5 {
+                        margin: 0 80px;
+                        font-size: 30px;
+                        color: #000000;
+                        white-space: nowrap;
+                        font-weight: bold;
+                        font-family: arial, sans-serif;
+                    }
+
+                    .header-line {
+                        width: 380px;
+                        height: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        background: repeating-linear-gradient(
+                            -70deg,
+                            #000000,
+                            #000000 15px,
+                            transparent 10px,
+                            transparent 20px
+                        );
+                    }
         </style>
         <div class="header-container">
             <div class="header-line"></div>
